@@ -1,0 +1,27 @@
+<h1>LIBROS</h1>
+    <div>
+        <table border = "1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Carrera</th>
+                    <th colspan="3">Opciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {%for carrera in Carrera%}
+                <tr>
+                    <td>{{carrera.id}}</td>
+                    <td>{{carrera.ncarrera}}</td>
+                    <td><a href="">Editar</a></td>
+                    <td><a href="">Eliminar</a></td>
+                    <td><a href="">Consultar</a></td>
+
+                </tr>
+                {%endfor%}
+            </tbody>
+        </table>
+        <a href="agregar_libro">Agregar</a>
+
+
+    </div>
